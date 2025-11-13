@@ -124,14 +124,24 @@ async function callOpenRouter(text, context) {
 			type: 'function',
 			function: {
 				name: 'next_question',
-				description: '다음 문항으로 이동합니다'
+				description: '다음 문항으로 이동합니다',
+				parameters: {
+					type: 'object',
+					properties: {},
+					required: []
+				}
 			}
 		},
 		{
 			type: 'function',
 			function: {
 				name: 'previous_question',
-				description: '이전 문항으로 이동합니다'
+				description: '이전 문항으로 이동합니다',
+				parameters: {
+					type: 'object',
+					properties: {},
+					required: []
+				}
 			}
 		},
 		{
@@ -155,21 +165,36 @@ async function callOpenRouter(text, context) {
 			type: 'function',
 			function: {
 				name: 'skip_question',
-				description: '현재 문항을 건너뛰고 다음 문항으로 이동합니다'
+				description: '현재 문항을 건너뛰고 다음 문항으로 이동합니다',
+				parameters: {
+					type: 'object',
+					properties: {},
+					required: []
+				}
 			}
 		},
 		{
 			type: 'function',
 			function: {
 				name: 'get_progress',
-				description: '현재 검사 진행 상황을 조회합니다 (완료된 문항 수, 남은 문항 수, 진행률)'
+				description: '현재 검사 진행 상황을 조회합니다 (완료된 문항 수, 남은 문항 수, 진행률)',
+				parameters: {
+					type: 'object',
+					properties: {},
+					required: []
+				}
 			}
 		},
 		{
 			type: 'function',
 			function: {
 				name: 'repeat_question',
-				description: '현재 문항을 다시 읽어줍니다'
+				description: '현재 문항을 다시 읽어줍니다',
+				parameters: {
+					type: 'object',
+					properties: {},
+					required: []
+				}
 			}
 		},
 		{
@@ -193,7 +218,12 @@ async function callOpenRouter(text, context) {
 			type: 'function',
 			function: {
 				name: 'get_all_answers',
-				description: '지금까지 답변한 모든 문항을 조회합니다'
+				description: '지금까지 답변한 모든 문항을 조회합니다',
+				parameters: {
+					type: 'object',
+					properties: {},
+					required: []
+				}
 			}
 		}
 	];
